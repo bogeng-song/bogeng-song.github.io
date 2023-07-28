@@ -1,6 +1,6 @@
 # Site settings
-title: Welcome to my homepage
-description: I'm Bogeng
+title: I'm Bogeng Song
+description: Welcome to my homepage
 baseurl: "" 
 #change the baseurl to "" if you are using it as your user GitHub Pages
 url: "https://bogeng-song.github.io/"  
