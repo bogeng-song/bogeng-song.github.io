@@ -37,45 +37,98 @@
     <link rel="stylesheet" href="assets/css/academicons.css"/>
     
     <style>
+      /* Research section styling */
+      .research-section {
+        margin-bottom: 30px;
+      }
+      
+      .research-item {
+        margin-bottom: 25px;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border-radius: 5px;
+        border-left: 4px solid #4CAF50;
+      }
+      
+      .research-item h3 {
+        margin-top: 0;
+        margin-bottom: 10px;
+        line-height: 1.3;
+      }
+      
+      .research-affiliation {
+        margin-bottom: 15px;
+        font-style: italic;
+        color: #666;
+        line-height: 1.4;
+      }
+      
       button.accordion {
-      font:14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
-      cursor: pointer;
-      padding: 0px;
-      border: none;
-      text-align: left;
-      outline: none;
-      font-size: 100%;
-      transition: 0.3s;
-      background-color: #f8f8f8;
+        font: 14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        cursor: pointer;
+        padding: 8px 12px;
+        margin: 5px 5px 5px 0;
+        border: 1px solid #ddd;
+        border-radius: 3px;
+        text-align: left;
+        outline: none;
+        font-size: 90%;
+        transition: 0.3s;
+        background-color: #fff;
+        color: #333;
       }
+      
       button.accordion.active, button.accordion:hover {
-      background-color: #f8f8f8;
+        background-color: #e7e7e7;
+        border-color: #999;
       }
+      
       button.accordion:after {
-      content: " [+] ";
-      font-size: 90%;
-      color:#777;
-      float: left;
-      margin-left: 1px;
+        content: " [+] ";
+        font-size: 90%;
+        color: #777;
+        float: right;
+        margin-left: 5px;
       }
 
       button.accordion.active:after {
-      content: " [\2212] ";
+        content: " [\2212] ";
       }
+      
       div.panel {
-      padding: 0 20px;
-      margin-top: 5px;
-      display: none;
-      background-color: white;
-      font-size: 100%;
+        padding: 15px 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        display: none;
+        background-color: white;
+        font-size: 95%;
+        border: 1px solid #ddd;
+        border-radius: 3px;
+        line-height: 1.5;
       }
+      
       div.panel.show {
-      display: block !important;
+        display: block !important;
       }
+      
       .social-row {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+      }
+      
+      /* Better spacing and typography */
+      h2 {
+        margin-top: 30px;
+        margin-bottom: 20px;
+        border-bottom: 2px solid #4CAF50;
+        padding-bottom: 5px;
+      }
+      
+      hr {
+        margin: 30px 0;
+        border: none;
+        border-top: 1px solid #eee;
       }
     </style>
   </head>
@@ -274,8 +327,8 @@
     for (i = 0; i < acc.length; i++) {
         acc[i].onclick = function(){
             this.classList.toggle("active");
-            this.parentNode.nextElementSibling.classList.toggle("show");
-      }
+            this.nextElementSibling.classList.toggle("show");
+        }
     }
     </script>
   </body>
