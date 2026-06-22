@@ -1,253 +1,286 @@
-
 <!doctype html>
 <html lang="en">
   <head>
-  <script src="https://use.fontawesome.com/baff6f55f5.js"></script>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Bogeng homepage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Research · Bogeng Song</title>
+    <meta name="description" content="Publications and research projects by Bogeng Song.">
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/github-light.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&display=swap" rel="stylesheet">
 
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-29643011-3', 'auto');
-      ga('send', 'pageview');
-    </script>
+    <!-- Icons -->
+    <script src="https://use.fontawesome.com/baff6f55f5.js"></script>
+    <link rel="stylesheet" href="assets/css/academicons.min.css"/>
 
-    <!-- New GA4 tracking code, see https://support.google.com/analytics/answer/10271001#analyticsjs-enable-basic --> 
+    <!-- Site styles -->
+    <link rel="stylesheet" href="stylesheets/site.css">
+
+    <!-- Google Analytics (GA4) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-GNJD50R0Z7"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-GNJD50R0Z7');
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-GNJD50R0Z7');
     </script>
-
-    <!-- For all browsers -->
-    <link rel="stylesheet" href="assets/css/academicons.min.css"/>
-    <link rel="stylesheet" href="assets/css/academicons.css"/>
-    
-    <style>
-      /* Research section styling */
-      .research-section {
-        margin-bottom: 30px;
-      }
-      
-      .research-item {
-        margin-bottom: 25px;
-        padding: 20px;
-        background-color: #f9f9f9;
-        border-radius: 5px;
-        border-left: 4px solid #4CAF50;
-      }
-      
-      .research-item h3 {
-        margin-top: 0;
-        margin-bottom: 10px;
-        line-height: 1.3;
-      }
-      
-      .research-affiliation {
-        margin-bottom: 15px;
-        font-style: italic;
-        color: #666;
-        line-height: 1.4;
-      }
-      
-      button.accordion {
-        font: 14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
-        cursor: pointer;
-        padding: 8px 12px;
-        margin: 5px 5px 5px 0;
-        border: 1px solid #ddd;
-        border-radius: 3px;
-        text-align: left;
-        outline: none;
-        font-size: 90%;
-        transition: 0.3s;
-        background-color: #fff;
-        color: #333;
-      }
-      
-      button.accordion.active, button.accordion:hover {
-        background-color: #e7e7e7;
-        border-color: #999;
-      }
-      
-      button.accordion:after {
-        content: " [+] ";
-        font-size: 90%;
-        color: #777;
-        float: right;
-        margin-left: 5px;
-      }
-
-      button.accordion.active:after {
-        content: " [\2212] ";
-      }
-      
-      div.panel {
-        padding: 15px 20px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        display: none;
-        background-color: white;
-        font-size: 95%;
-        border: 1px solid #ddd;
-        border-radius: 3px;
-        line-height: 1.5;
-      }
-      
-      div.panel.show {
-        display: block !important;
-      }
-      
-      .social-row {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-      }
-      
-      /* Better spacing and typography */
-      h2 {
-        margin-top: 30px;
-        margin-bottom: 20px;
-        border-bottom: 2px solid #4CAF50;
-        padding-bottom: 5px;
-      }
-      
-      hr {
-        margin: 30px 0;
-        border: none;
-        border-top: 1px solid #eee;
-      }
-    </style>
   </head>
+
   <body>
-    <div class="wrapper">
-      <header>
-        <h1>Bogeng Song</h1>
-        <p>Psychology PhD student <br>Georgia Tech</p>
-        <p>Research Interest: <br>Computational cognitive science, Perceptual decision-making, visual perception</a></p>
-    <h3><a href="https://bogeng-song.github.io/">Home</a></h3>
-        <h3><a href="https://bogeng-song.github.io/research.html">Research</a></h3>
-    <h3><a href="https://bogeng-song.github.io/research/Bogeng_CV.pdf">CV</a></h3>  
-        <h3><a href="https://bogeng-song.github.io/personal.html">Personal</a></h3>
-    <b>Social</b><br>
-        <div class="social-row">
-          <a href="mailto:bsong91@gatech.edu" class="author-social" target="_blank"><i class="fa fa-fw fa-envelope-square"></i> Email</a><br>
-          <a href="https://github.com/bogeng-song"><i class="fa fa-fw fa-github-square"></i> GitHub</a><br>
-          <a href="https://github.com/bogengsong"><i class="fa fa-fw fa-github-square"></i> GitHub (less used)</a><br>
-          <a href="https://scholar.google.com/citations?user=7Sex-LYAAAAJ&hl=en"><i class="ai ai-fw ai-google-scholar-square"></i> Google Scholar</a><br>
-          <br>
-        </div>
-        <br>
-
-   
-    <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-
-      </header>
-      <section>
-
-    <hr>
-
-    <section class="research-section">
-      <h2>Under Review/Preprint</h2>
-      <div class="research-item">
-        <h3>Implied gravity promotes coherent motion perception</h3>
-        <p class="research-affiliation">at <a href="https://scholar.google.co.uk/citations?user=ZNf4d7IAAAAJ&hl=en&oi=ao">Yi Jiang's Lab</a>, Institute of Psychology, Chinese Academy of Sciences. (first Author)</p>
-        <button class="accordion">Abstract</button>
-        <div class="panel">
-          <p>Coming soon...</p>
+    <!-- ============================ Nav ============================ -->
+    <nav class="nav">
+      <div class="nav-inner">
+        <a class="nav-brand" href="index.html">Bogeng Song <span class="cn">宋伯耕</span></a>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="research.html" class="active">Research</a>
+          <a href="research/Bogeng_CV.pdf">CV</a>
+          <a href="personal.html">Personal</a>
         </div>
       </div>
-    </section>
+    </nav>
 
-    <hr>
+    <main>
+      <h1 style="font-size:2rem;margin-bottom:.4rem;">Research</h1>
+      <p class="muted" style="margin-bottom:2.4rem;">
+        Names in <strong>bold</strong> are mine; <span class="small">&dagger;</span> denotes equal contribution.
+        See <a href="https://scholar.google.com/citations?user=7Sex-LYAAAAJ&hl=en">Google Scholar</a> for the full list.
+      </p>
 
+      <!-- ==================== Journal Articles ==================== -->
+      <section class="section pub-group">
+        <h2 class="section-title">Peer-reviewed Journal Articles</h2>
 
-    <section class="research-section">
-      <h2>Published &amp; Forthcoming Papers</h2>
-      <div class="research-item">
-        <h3><a href="https://www.frontiersin.org/articles/10.3389/fnagi.2019.00152/full">Altered Static and Temporal Dynamic Amplitude of Low-Frequency Fluctuations in the Background Network During Working Memory States in Mild Cognitive Impairment</a></h3>
-        <p class="research-affiliation">cooperate with <a href="https://www.researchgate.net/scientific-contributions/Pengyun-Wang-2105109369">Pengyun Wang Lab</a>, University of Chinese Academy of Sciences.</p>
-        <button class="accordion">Abstract</button>
-        <div class="panel">
-          <p>Previous studies investigating working memory performance in patients with mild cognitive impairment (MCI) have mainly focused on the neural mechanisms of alterations in activation. To date, very few studies have investigated background network alterations in the working memory state. Therefore, the present study investigated the static and temporal dynamic changes in the background network in MCI patients during a working memory task. A hybrid delayed-match-to-sample task was used to examine working memory performance in MCI patients. Functional magnetic resonance imaging (fMRI) data were collected and the marker of amplitude of low-frequency fluctuations (ALFF) was used to investigate alterations in the background network. The present study demonstrated static and dynamic alterations of ALFF in MCI patients during working memory tasks, relative to the resting state. Traditional static analysis revealed that ALFF decreased in the right ventrolateral prefrontal cortex (VLPFC), right dorsolateral PFC (DLPFC), and left supplementary motor area for normal controls (NCs) in the working memory state. However, the same regions showed increased ALFF in MCI patients. Furthermore, relative to NCs, MCI patients demonstrated altered performance-related functional connectivity (FC) patterns, with the right VLPFC and right DLPFC as ROIs. In terms of temporal dynamic analysis, the present study found that in the working memory state dynamic ALFF of bilateral thalamus regions was increased in NCs but decreased in MCI patients. Additionally, MCI patients demonstrated altered performance-related coefficient of variation patterns; the regions in MCI patients were larger and more widely distributed in the parietal and temporal lobes, relative to NCs. This is the first study to examine static and temporal dynamic alterations of ALFF in the background network of MCI patients in working memory states. The results extend previous studies by providing a new perspective on the neural mechanisms of working memory deficits in MCI patients.</p>
+        <!-- Eyes on hold -->
+        <div class="pub">
+          <p class="pub-title">
+            <a href="https://www.nature.com/articles/s41598-025-04748-0">Eyes on hold: motion task difficulty jointly delays microsaccade and pupil responses</a>
+          </p>
+          <p class="pub-authors">R. Ezzo, <span class="me">B. Song</span>, B. Rokers, M. Carrasco</p>
+          <p class="pub-venue"><span class="badge journal">Journal</span> <em>Scientific Reports</em>, 2025</p>
+          <div class="pub-links">
+            <a href="https://www.nature.com/articles/s41598-025-04748-0"><i class="fa fa-external-link"></i> Article</a>
+            <a href="https://doi.org/10.1038/s41598-025-04748-0"><i class="ai ai-doi"></i> DOI</a>
+          </div>
+          <details class="abstract">
+            <summary>Abstract</summary>
+            <div class="abstract-body">
+              <p>Observers discriminated the motion direction of a briefly presented perifoveal
+              drifting stimulus under two difficulty manipulations — cardinal versus oblique
+              directions, and large versus small tilt offsets. Increased task difficulty
+              strengthened and prolonged microsaccade inhibition, producing delayed rebounds,
+              and peak pupillary responses were both larger in amplitude and delayed for harder
+              conditions. Discrimination response times correlated with both microsaccade
+              rebounds and peak pupil responses. These delays are consistent with a prolonged
+              period of sensory evidence accumulation, and the correlated dynamics suggest a
+              shared neural mechanism underlying microsaccade and pupil responses.</p>
+            </div>
+          </details>
         </div>
-        <button class="accordion">My Responsibilities</button>
-        <div class="panel">
-          <p>In this project, I analyze fMRI data and write the paper results part.</p>
+
+        <!-- Implied gravity -->
+        <div class="pub">
+          <p class="pub-title">
+            <a href="https://www.nature.com/articles/s41526-025-00498-5">Implied gravity promotes coherent motion perception</a>
+          </p>
+          <p class="pub-authors">X. Lu<span class="small">&dagger;</span>, <span class="me">B. Song</span><span class="small">&dagger;</span>, S. Zhang, S. Zhang, M. Huang, Y. Wang, Y. Jiang</p>
+          <p class="pub-venue"><span class="badge journal">Journal</span> <em>npj Microgravity</em>, 2025 &nbsp;·&nbsp; <span class="small">co-first author</span></p>
+          <div class="pub-links">
+            <a href="https://www.nature.com/articles/s41526-025-00498-5"><i class="fa fa-external-link"></i> Article</a>
+            <a href="https://doi.org/10.1038/s41526-025-00498-5"><i class="ai ai-doi"></i> DOI</a>
+          </div>
+          <details class="abstract">
+            <summary>Abstract</summary>
+            <div class="abstract-body">
+              <p>Perceptual thresholds for motion coherence were significantly lower under natural
+              gravity than under reversed-gravity conditions, regardless of variations in stimulus
+              parameters and visual context. The results suggest that the human visual system
+              inherently extracts the gravitational-acceleration cues conveyed by local motion
+              signals and integrates them into a unified global motion percept, thereby
+              facilitating the perception of complex motion patterns in natural environments.</p>
+            </div>
+          </details>
         </div>
-      </div>
+      </section>
 
-      <div class="research-item">
-        <h3><a href="https://www.nature.com/articles/s41598-025-04748-0">Microsaccade rate and pupil size play a role in motion perception and index task difficulty</a></h3>
-        <p class="research-affiliation">at <a href="https://carrascolab.hosting.nyu.edu/">Carrasco Lab</a>, NYU Department of Psychology.</p>
-        <button class="accordion">Abstract</button>
-        <div class="panel">
-          <p>This study examines how microsaccades and pupil size relate to motion perception and task difficulty.</p>
+      <!-- ======================= Preprints ======================= -->
+      <section class="section pub-group">
+        <h2 class="section-title">Preprints</h2>
+
+        <!-- ML segmenting visual cortex -->
+        <div class="pub">
+          <p class="pub-title">
+            <a href="https://www.biorxiv.org/content/10.1101/2025.05.16.654503v1.full">Machine learning matches human performance at segmenting the human visual cortex</a>
+          </p>
+          <p class="pub-authors">N. C. Benson, <span class="me">B. Song</span>, S. Chen, T. Miyata, H. Takemura, J. Winawer</p>
+          <p class="pub-venue"><span class="badge preprint">Preprint</span> <em>bioRxiv</em>, 2025</p>
+          <div class="pub-links">
+            <a href="https://www.biorxiv.org/content/10.1101/2025.05.16.654503v1.full"><i class="fa fa-external-link"></i> bioRxiv</a>
+            <a href="https://doi.org/10.1101/2025.05.16.654503"><i class="ai ai-doi"></i> DOI</a>
+          </div>
+          <details class="abstract">
+            <summary>Abstract</summary>
+            <div class="abstract-body">
+              <p>Localizing visual areas on the cortical surface usually requires substantial time
+              and expertise from human raters. We trained convolutional neural networks (U-Net with
+              a ResNet backbone) to predict the boundaries and iso-eccentric regions of V1, V2, and
+              V3 from combinations of anatomical, diffusion-weighted, and functional MRI data. CNNs
+              given the same functional data available to human raters predicted these maps with
+              accuracy statistically indistinguishable from inter-rater reliability, while CNNs
+              lacking functional data were less accurate. The results show that CNNs can replace the
+              manual effort of defining early retinotopic maps, but not yet the acquisition of
+              functional data.</p>
+            </div>
+          </details>
         </div>
-        <button class="accordion">Project Description and My Responsibilities</button>
-        <div class="panel">
-          <p>In this project, I participated in the whole process except the data collection part.</p>
+      </section>
+
+      <!-- ================ Conference Presentations ================ -->
+      <section class="section pub-group">
+        <h2 class="section-title">Conference Presentations</h2>
+
+        <!-- Response bias / confidence (VSS 2025) -->
+        <div class="pub">
+          <p class="pub-title">The influence of response bias on confidence and accuracy in multi-alternative tasks for humans and artificial neural networks</p>
+          <p class="pub-authors"><span class="me">B. Song</span>, D. Rahnev</p>
+          <p class="pub-venue"><span class="badge conference">Conference</span> Vision Sciences Society (VSS) 2025 &nbsp;·&nbsp; <em>Journal of Vision</em> abstract</p>
+          <details class="abstract">
+            <summary>Summary</summary>
+            <div class="abstract-body">
+              <p>Using parallel behavioral experiments and artificial neural network models, this
+              work examines how response bias shapes both accuracy and confidence in perceptual
+              tasks with more than two alternatives, asking whether humans and ANNs show comparable
+              signatures of biased confidence computation.</p>
+            </div>
+          </details>
         </div>
-      </div>
-    </section>
 
-    <hr>
-
-    <section class="research-section">
-      <h2>Conference Presentations</h2>
-      <div class="research-item">
-        <h3><a href="https://www.visionsciences.org/presentation/?id=5177">Microsaccade rates reflect trial difficulty for perifoveal motion discrimination</a></h3>
-        <p class="research-affiliation">VSS 2023, Authors: Rania Ezzo, Bogeng Song, Bas Rokers, Marisa Carrasco.</p>
-        <button class="accordion">Abstract</button>
-        <div class="panel">
-          <p>Microsaccades, or small recurring eye movements, typically occur ~1-2 times per second. Although generally considered involuntary, the characteristics of these eye movements are task-dependent and affect performance. For example, microsaccades are flexibly allocated to precisely relocate gaze during high acuity tasks in the fovea and suppressed prior to the onset of a stimulus outside of the fovea during a motion discrimination task. Here we investigated whether and how microsaccade rates are adaptively modulated by trial difficulty when observers discriminate motion directions in the perifovea. METHODS. We used a 2AFC task to measure the discriminability of a Gabor drifting for 500ms in 1 of 8 reference directions (4 cardinal, 4 oblique) at 8 isoeccentric locations (7​​°). Observers reported a Gabor's drift direction, which was slightly clockwise or counterclockwise with respect to a reference direction. The difficulty of each trial was varied in two ways: (a) cardinal vs. oblique directions; and (b) tilt offset between reference and Gabor direction. The tilt angles were randomized using a method of constant stimuli: the Gabor's drift direction was offset from the reference direction by ± 0.5, 1, 2, 4 or 8°. RESULTS. First, we found that microsaccade rates were suppressed prior to stimulus onset. Second, microsaccade rates were modulated by trial difficulty in two ways: they decreased (1) as the angular offset between the target and standard decreased; and (2) when stimuli drifted in oblique rather than cardinal directions. CONCLUSION. Microsaccades were suppressed prior to stimulus presentation, and during the stimulus period for difficult discrimination tasks in the perifovea. This flexibility is consistent with the proposals that greater fixational stability can (1) mitigate potential blur during microsaccades, and (2) prolong the duration of evidence accumulation. As a result, microsaccades may serve as a marker of cognitive effort for visual tasks in the perifovea.</p>
+        <!-- Hierarchical working memory (CCN 2025) -->
+        <div class="pub">
+          <p class="pub-title">Hierarchical representational transformations of working memory in brains and machines</p>
+          <p class="pub-authors">Q. Yang, H. W. Han, <span class="me">B. Song</span>, J. Golomb, D. Rahnev, Y. Mohsenzadeh, H.-H. Li</p>
+          <p class="pub-venue"><span class="badge conference">Conference</span> Cognitive Computational Neuroscience (CCN) 2025</p>
+          <div class="pub-links">
+            <!-- TODO: replace "#" below with your CCN 2025 OpenReview link (from your account) -->
+            <a href="#"><i class="fa fa-external-link"></i> OpenReview (add CCN link)</a>
+          </div>
+          <details class="abstract">
+            <summary>Abstract</summary>
+            <div class="abstract-body">
+              <p>How are working-memory representations transformed between encoding and retrieval —
+              through stable codes, dynamically updated subspaces, or their interplay? Combining
+              high-resolution 7T fMRI from the Natural Scenes Dataset with recurrent neural networks
+              trained on a naturalistic 1-back task, and using representational similarity,
+              cross-decoding, and subspace-geometry analyses, the study finds convergent evidence
+              for a mixture mechanism: early visual regions (V1–hV4) undergo large representational
+              changes across encoding and retrieval, including both rotational and non-rotational
+              transformations.</p>
+            </div>
+          </details>
         </div>
-      </div>
 
-    </section>
-
-
-    <hr>
-
-    <section class="research-section">
-      <h2>Other Projects</h2>
-      <div class="research-item">
-        <h3>Motion discrimination around the visual field</h3>
-        <p class="research-affiliation">at <a href="https://carrascolab.hosting.nyu.edu/">Carrasco Lab</a>, New York University</p>
-        <button class="accordion">Project Description</button>
-        <div class="panel">
-          <p>We used psychophysical and eye-tracking methods to measure behavioral differences for different motion directions (e.g., radial versus tangential). To model the behavioral data, we fit psychophysical curves, and compare performance for different motion directions.</p>
+        <!-- CNN delineation (MODVIS 2023) -->
+        <div class="pub">
+          <p class="pub-title">
+            <a href="research/modvis.pdf">Automated delineation of visual area boundaries and eccentricities by a CNN using functional, anatomical, and diffusion-weighted MRI data</a>
+          </p>
+          <p class="pub-authors">N. C. Benson, <span class="me">B. Song</span>, T. Miyata, H. Takemura, J. Winawer</p>
+          <p class="pub-venue"><span class="badge conference">Conference</span> MODVIS 2023 (VSS satellite workshop)</p>
+          <div class="pub-links">
+            <a href="research/modvis.pdf"><i class="fa fa-file-pdf-o"></i> Poster (PDF)</a>
+          </div>
+          <details class="abstract">
+            <summary>Abstract</summary>
+            <div class="abstract-body">
+              <p>Delineating visual field maps and iso-eccentricities from fMRI is important but
+              time-consuming. We trained U-Net CNNs with ResNet18 backbones to predict V1/V2/V3
+              boundaries or five iso-eccentricity regions from different combinations of input data
+              (T1-weighted anatomy, T2*-weighted anatomy, diffusion-weighted tract endpoints, and
+              functional retinotopy). All CNNs using functional data reached cross-validated accuracy
+              indistinguishable from inter-rater reliability (dice coefficient ≈ 92%), while those
+              without functional data were lower (~75%) but still exceeded existing non-CNN methods.
+              This is the earlier conference version of the bioRxiv preprint above.</p>
+            </div>
+          </details>
         </div>
-      </div>
-    </section>
 
-  </section>
-    </div>
-    <script src="javascripts/scale.fix.js"></script>
-    <script> 
-    var acc = document.getElementsByClassName("accordion");
-    var i;
+        <!-- Microsaccade rates (VSS 2023) -->
+        <div class="pub">
+          <p class="pub-title">
+            <a href="https://www.visionsciences.org/presentation/?id=5177">Microsaccade rates reflect trial difficulty for perifoveal motion discrimination</a>
+          </p>
+          <p class="pub-authors">R. Ezzo, <span class="me">B. Song</span>, B. Rokers, M. Carrasco</p>
+          <p class="pub-venue"><span class="badge conference">Conference</span> Vision Sciences Society (VSS) 2023 &nbsp;·&nbsp; <em>Journal of Vision</em> abstract</p>
+          <div class="pub-links">
+            <a href="https://www.visionsciences.org/presentation/?id=5177"><i class="fa fa-external-link"></i> Abstract</a>
+          </div>
+          <details class="abstract">
+            <summary>Abstract</summary>
+            <div class="abstract-body">
+              <p>Microsaccades occur ~1–2 times per second and, though largely involuntary, are
+              modulated by task demands. Using a 2AFC task in which observers judged the drift
+              direction of a perifoveal Gabor (8 reference directions, 8 iso-eccentric locations),
+              we varied difficulty via cardinal-versus-oblique directions and tilt offset. Microsaccade
+              rates were suppressed prior to stimulus onset and were further modulated by difficulty:
+              they decreased as the angular offset shrank and when stimuli drifted in oblique rather
+              than cardinal directions. Greater fixational stability for harder trials may mitigate
+              blur and prolong evidence accumulation, so microsaccades may index cognitive effort for
+              perifoveal visual tasks.</p>
+            </div>
+          </details>
+        </div>
+      </section>
 
-    for (i = 0; i < acc.length; i++) {
-        acc[i].onclick = function(){
-            this.classList.toggle("active");
-            this.nextElementSibling.classList.toggle("show");
-        }
-    }
-    </script>
+      <!-- ==================== Selected Projects =================== -->
+      <section class="section pub-group">
+        <h2 class="section-title">Selected Projects</h2>
+
+        <!-- Bio-inspired attention -->
+        <div class="pub">
+          <p class="pub-title">
+            <a href="research/MEM_conference.pdf">How bio-inspired attention affects task performance in visual and auditory models</a>
+          </p>
+          <p class="pub-authors"><span class="me">B. Song</span>, G. Lindsay</p>
+          <p class="pub-venue"><span class="badge project">Project</span> Lindsay Lab, New York University</p>
+          <div class="pub-links">
+            <a href="research/MEM_conference.pdf"><i class="fa fa-file-pdf-o"></i> Poster (PDF)</a>
+          </div>
+          <details class="abstract">
+            <summary>Description</summary>
+            <div class="abstract-body">
+              <p>We added a gain-based, feature-similarity attention mechanism to one layer at a time
+              in matched visual (VGG16) and auditory (VGGish) networks, across detection and read-out
+              tasks. In the visual models, attention reliably improved performance — more so when
+              applied to higher layers — whereas the same mechanism did not improve performance in the
+              auditory models, suggesting that bio-inspired attention does not transfer uniformly
+              across sensory modalities.</p>
+            </div>
+          </details>
+        </div>
+
+        <!-- Motion discrimination around the visual field -->
+        <div class="pub">
+          <p class="pub-title">Motion discrimination around the visual field</p>
+          <p class="pub-authors"><span class="me">B. Song</span> · Carrasco Lab</p>
+          <p class="pub-venue"><span class="badge project">Project</span> New York University</p>
+          <details class="abstract">
+            <summary>Description</summary>
+            <div class="abstract-body">
+              <p>Using psychophysics and eye tracking, we measured behavioral differences across
+              motion directions (e.g., radial versus tangential) at different locations in the
+              visual field, fitting psychophysical functions to compare sensitivity for different
+              motion directions.</p>
+            </div>
+          </details>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      © Bogeng Song · Hosted on GitHub Pages
+    </footer>
   </body>
 </html>
-

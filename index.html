@@ -1,115 +1,154 @@
 <!doctype html>
 <html lang="en">
   <head>
-  <script src="https://use.fontawesome.com/baff6f55f5.js"></script>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Bogeng homepage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bogeng Song</title>
+    <meta name="description" content="Bogeng Song — Psychology PhD student at Georgia Tech studying visual perception and perceptual decision-making with computational modeling.">
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/github-light.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&display=swap" rel="stylesheet">
 
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    <!-- Icons -->
+    <script src="https://use.fontawesome.com/baff6f55f5.js"></script>
+    <link rel="stylesheet" href="assets/css/academicons.min.css"/>
 
-      ga('create', 'UA-29643011-3', 'auto');
-      ga('send', 'pageview');
-    </script>
+    <!-- Site styles -->
+    <link rel="stylesheet" href="stylesheets/site.css">
 
-    <!-- New GA4 tracking code, see https://support.google.com/analytics/answer/10271001#analyticsjs-enable-basic --> 
+    <!-- Google Analytics (GA4) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-GNJD50R0Z7"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-GNJD50R0Z7');
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-GNJD50R0Z7');
     </script>
-
-    <!-- For all browsers -->
-    <link rel="stylesheet" href="assets/css/academicons.min.css"/>
-    <link rel="stylesheet" href="assets/css/academicons.css"/>
-
-    <style>
-      button.accordion {
-      font:14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
-      cursor: pointer;
-      padding: 0px;
-      border: none;
-      text-align: left;
-      outline: none;
-      font-size: 100%;
-      transition: 0.3s;
-      background-color: #f8f8f8;
-      }
-      button.accordion.active, button.accordion:hover {
-      background-color: #f8f8f8;
-      }
-      button.accordion:after {
-      content: " [+] ";
-      font-size: 90%;
-      color:#777;
-      float: left;
-      margin-left: 1px;
-      }
-
-      button.accordion.active:after {
-      content: " [\2212] ";
-      }
-      div.panel {
-      padding: 0 20px;
-      margin-top: 5px;
-      display: none;
-      background-color: white;
-      font-size: 100%;
-      }
-      div.panel.show {
-      display: block !important;
-      }
-      .social-row {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-      }
-    </style>
   </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1>Bogeng Song</h1>
-        <p>Psychology PhD student <br>Georgia Tech</p>
-        <p>Research Interest: <br>Computational cognitive science, Perceptual decision-making, visual perception</a></p>
-    <h3><a href="https://bogeng-song.github.io/">Home</a></h3>
-        <h3><a href="https://bogeng-song.github.io/research.html">Research</a></h3>
-    <h3><a href="https://bogeng-song.github.io/research/Bogeng_CV.pdf">CV</a></h3>  
-        <h3><a href="https://bogeng-song.github.io/personal.html">Personal</a></h3>
-    <b>Social</b><br>
-        <div class="social-row">
-          <a href="mailto:bsong91@gatech.edu" class="author-social" target="_blank"><i class="fa fa-fw fa-envelope-square"></i> Email</a><br>
-          <a href="https://github.com/bogeng-song"><i class="fa fa-fw fa-github-square"></i> GitHub</a><br>
-          <a href="https://github.com/bogengsong"><i class="fa fa-fw fa-github-square"></i> GitHub (less used)</a><br>
-          <a href="https://scholar.google.com/citations?user=7Sex-LYAAAAJ&hl=en"><i class="ai ai-fw ai-google-scholar-square"></i> Google Scholar</a><br>
-          <br>
-        </div>
-        <br>
 
-  
-    <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+  <body>
+    <!-- ============================ Nav ============================ -->
+    <nav class="nav">
+      <div class="nav-inner">
+        <a class="nav-brand" href="index.html">Bogeng Song <span class="cn">宋伯耕</span></a>
+        <div class="nav-links">
+          <a href="index.html" class="active">Home</a>
+          <a href="research.html">Research</a>
+          <a href="research/Bogeng_CV.pdf">CV</a>
+          <a href="personal.html">Personal</a>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <!-- ============================ Hero ======================== -->
+      <header class="hero">
+        <img class="hero-photo" src="bogeng.jpg" alt="Bogeng Song">
+        <div class="hero-body">
+          <h1 class="hero-name">Bogeng Song <span class="cn">宋伯耕</span></h1>
+          <p class="hero-role">
+            Psychology PhD student, <strong>Georgia Tech</strong><br>
+            advised by <a href="https://rahnevlab.gatech.edu/">Dr. Dobromir (Doby) Rahnev</a>
+          </p>
+          <div class="tags">
+            <span class="tag">Computational cognitive science</span>
+            <span class="tag">Perceptual decision-making</span>
+            <span class="tag">Visual perception</span>
+            <span class="tag">Metacognition</span>
+          </div>
+          <div class="social">
+            <a href="mailto:bsong91@gatech.edu"><i class="fa fa-envelope"></i> Email</a>
+            <a href="https://scholar.google.com/citations?user=7Sex-LYAAAAJ&hl=en"><i class="ai ai-google-scholar"></i> Scholar</a>
+            <a href="https://github.com/bogeng-song"><i class="fa fa-github"></i> GitHub</a>
+            <a href="research/Bogeng_CV.pdf"><i class="fa fa-file-text-o"></i> CV</a>
+          </div>
+        </div>
       </header>
-      <section>
-      <img src="bogeng.jpg" height="300" width="370" alt="Tyler Ransom"></h3>
-      <p>I'm Bogeng Song (宋伯耕), I am a PhD student at Georgia tech, working with <a href="https://rahnevlab.gatech.edu/"> Dr. Dobromir (Doby) Rahnev</a>. My work focus on the machine and biological vision vision. Before that, I am a master student majoring in Psychology at New York University, working with <a href="https://lindsay-lab.github.io/"> Grace Lindsay</a>, <a href="https://carrascolab.hosting.nyu.edu/">	Marisa Carrasco</a> and <a href="https://wp.nyu.edu/winawerlab/">Jonathan Winawer </a>. </p>
-      <p>My research interests use computational modeling to understand how humans perceive and understand the world. At GT, My work uses behavior test and computational model to understand human visual perception. At NYU, my work mainly focuses on visual perception and attention. I use psychophysical methods and eye movements to study motion discrimination around the visual field, use deep learning methods to make models segment fMRI images, and use computational models to explore how bio-inspired attention affects task performance in visual and auditory models. </p>
-      <p>In the future, I hope to continue to focus on how does our attention guide human behavior? How does the brain represent sensory information? How does the brain use this information to learn/make decision? What algorithms do they use? Can we build models to fit people's behavior? My research is motivated by these questions. </p>
-      <p>In general, I am passionate about using cognitive models as tools to understand the brain and mind.  </p>
+
+      <!-- ========================= About ========================== -->
+      <section class="section">
+        <p class="lead">
+          I use computational modeling and psychophysics to understand how humans —
+          and artificial neural networks — perceive the visual world and make
+          decisions about what they see.
+        </p>
+        <p>
+          I'm a PhD student in the <a href="https://rahnevlab.gatech.edu/">Rahnev Lab</a>
+          at Georgia Tech. My current work compares how people and deep neural networks form
+          perceptual decisions and the <em>confidence</em> they attach to them, especially in
+          tasks with more than two choices. The goal is to pin down what computations turn
+          noisy sensory evidence into a decision, and how the brain knows when that decision
+          is likely to be right.
+        </p>
+        <p>
+          Before Georgia Tech, I earned a Master's in Psychology at New York University, where
+          I worked with <a href="https://lindsay-lab.github.io/">Grace Lindsay</a>,
+          <a href="https://carrascolab.hosting.nyu.edu/">Marisa Carrasco</a>, and
+          <a href="https://wp.nyu.edu/winawerlab/">Jonathan Winawer</a>. There I studied visual
+          perception and attention from several angles: measuring how motion discrimination
+          changes across the visual field with psychophysics and eye tracking, using deep
+          learning to segment visual cortex from fMRI, and modeling how bio-inspired attention
+          shapes performance in visual and auditory networks.
+        </p>
       </section>
-    </div>
-    <script src="javascripts/scale.fix.js"></script>
+
+      <!-- ==================== Research focus ====================== -->
+      <section class="section">
+        <h2 class="section-title">What I work on</h2>
+        <div class="focus-grid">
+          <div class="focus-card">
+            <h3>Decisions &amp; confidence</h3>
+            <p>How evidence is accumulated into a choice, and how confidence is computed —
+               in humans and in neural-network models of the same tasks.</p>
+          </div>
+          <div class="focus-card">
+            <h3>Vision around the field</h3>
+            <p>How perception and the eye movements that support it vary with location,
+               motion direction, and task difficulty.</p>
+          </div>
+          <div class="focus-card">
+            <h3>Brains &amp; machines</h3>
+            <p>Using deep networks both as models of the visual system and as practical tools
+               for analyzing neuroimaging data.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== Guiding questions =================== -->
+      <section class="section">
+        <h2 class="section-title">Questions that drive me</h2>
+        <p>
+          How does attention guide what we do? How does the brain represent sensory
+          information, and how does it use that information to learn and to decide? What
+          algorithms underlie these processes — and can we build models that capture the
+          behavior they produce? At heart, I'm interested in using cognitive and computational
+          models as tools for understanding the brain and the mind.
+        </p>
+      </section>
+
+      <!-- ====================== Education ========================= -->
+      <section class="section">
+        <h2 class="section-title">Education</h2>
+        <ul class="timeline">
+          <li>
+            <div class="when">Present</div>
+            <div><span class="what">PhD, Psychology</span> — <span class="where">Georgia Institute of Technology</span></div>
+            <div class="small muted">Rahnev Lab · computational cognitive science &amp; perceptual decision-making</div>
+          </li>
+          <li>
+            <div class="when">MA</div>
+            <div><span class="what">MA, Psychology</span> — <span class="where">New York University</span></div>
+            <div class="small muted">Worked with the Lindsay, Carrasco, and Winawer labs</div>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      © Bogeng Song · Hosted on GitHub Pages
+    </footer>
   </body>
 </html>
