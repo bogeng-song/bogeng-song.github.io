@@ -282,6 +282,11 @@ main {
 .badge.preprint   { background: #fdf0e3; color: #95571a; }
 .badge.conference { background: #e8f3ec; color: #2c6b41; }
 .badge.project    { background: #eee9f5; color: #543c87; }
+.badge.course     { background: #eef1f6; color: #3a4a63; }
+
+/* Compact inline list (coursework, etc.) */
+.course-note { font-size: .95rem; color: var(--ink-soft); }
+.course-note strong { color: var(--ink); }
 
 /* links row under a publication */
 .pub-links { display: flex; flex-wrap: wrap; gap: .9rem; margin-top: .15rem; }
