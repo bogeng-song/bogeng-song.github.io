@@ -213,6 +213,21 @@ main {
 }
 .focus-card p { margin: 0; font-size: .97rem; }
 
+/* --------------------- Research-interest blocks ------------------- */
+.interests { margin-top: .3rem; }
+.interest {
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--line);
+}
+.interest:first-child { padding-top: .2rem; }
+.interest:last-child { border-bottom: 0; padding-bottom: 0; }
+.interest h3 {
+  font-size: 1.1rem;
+  margin-bottom: .35rem;
+  color: var(--accent-dark);
+}
+.interest p { margin: 0; }
+
 /* ---------------------------- Timeline ---------------------------- */
 .timeline { list-style: none; margin: 0; padding: 0; }
 .timeline li {
